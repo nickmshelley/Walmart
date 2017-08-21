@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="166" id="zwA-Qg-Isu" customClass="ProductCell" customModule="Walmart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zwA-Qg-Isu" id="iiJ-aO-5sg">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3SX-oA-2oc">
+                        <rect key="frame" x="12" y="12" width="430" height="141.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AhQ-iS-bi2">
+                                <rect key="frame" x="0.0" y="31" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Fov-KI-VTT"/>
+                                    <constraint firstAttribute="height" constant="80" id="iSy-OY-803"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FNY-a3-L7m">
+                                <rect key="frame" x="100" y="23.5" width="330" height="94.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-EN-MIv">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfR-C8-f8H">
+                                        <rect key="frame" x="0.0" y="27.5" width="330" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price and Stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ4-JM-8Du">
+                                        <rect key="frame" x="0.0" y="52.5" width="330" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geD-Ya-6E8">
+                                        <rect key="frame" x="0.0" y="77.5" width="330" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3SX-oA-2oc" secondAttribute="trailing" constant="12" id="8rC-y7-8cc"/>
+                    <constraint firstAttribute="bottom" secondItem="3SX-oA-2oc" secondAttribute="bottom" constant="12" id="VKz-4W-2bx"/>
+                    <constraint firstItem="3SX-oA-2oc" firstAttribute="top" secondItem="iiJ-aO-5sg" secondAttribute="top" constant="12" id="lY3-6j-8G8"/>
+                    <constraint firstItem="3SX-oA-2oc" firstAttribute="leading" secondItem="iiJ-aO-5sg" secondAttribute="leading" constant="12" id="nCw-4v-hZE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="8ci-EN-MIv" id="uJp-lg-k91"/>
+                <outlet property="priceAndStockLabel" destination="RZ4-JM-8Du" id="0OB-XS-rfW"/>
+                <outlet property="productImageView" destination="AhQ-iS-bi2" id="Xlp-5t-sgw"/>
+                <outlet property="ratingLabel" destination="geD-Ya-6E8" id="PqI-pb-Ept"/>
+                <outlet property="shortDescriptionLabel" destination="sfR-C8-f8H" id="CvR-io-aW7"/>
+            </connections>
+            <point key="canvasLocation" x="-194" y="4"/>
+        </tableViewCell>
+    </objects>
+</document>
